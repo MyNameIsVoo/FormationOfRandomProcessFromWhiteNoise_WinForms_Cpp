@@ -169,6 +169,12 @@ private: System::Windows::Forms::TextBox^ textBox5;
 private: System::Windows::Forms::TextBox^ textBox4;
 private: System::Windows::Forms::TabPage^ tabPage2;
 private: System::Windows::Forms::DataVisualization::Charting::Chart^ chart15;
+private: System::Windows::Forms::GroupBox^ groupBox3;
+private: System::Windows::Forms::Label^ label7;
+private: System::Windows::Forms::Label^ label8;
+private: System::Windows::Forms::TextBox^ textBox8;
+private: System::Windows::Forms::TextBox^ textBox9;
+private: System::Windows::Forms::CheckBox^ checkBox5;
 
 
 	private:
@@ -231,6 +237,12 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ chart15;
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
+			this->groupBox3 = (gcnew System::Windows::Forms::GroupBox());
+			this->checkBox5 = (gcnew System::Windows::Forms::CheckBox());
+			this->label7 = (gcnew System::Windows::Forms::Label());
+			this->label8 = (gcnew System::Windows::Forms::Label());
+			this->textBox8 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox9 = (gcnew System::Windows::Forms::TextBox());
 			this->tabPage1->SuspendLayout();
 			this->tabControl2->SuspendLayout();
 			this->tabPage4->SuspendLayout();
@@ -243,6 +255,7 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ chart15;
 			this->groupBox2->SuspendLayout();
 			this->groupBox1->SuspendLayout();
 			this->tabControl1->SuspendLayout();
+			this->groupBox3->SuspendLayout();
 			this->SuspendLayout();
 			this->label24->AutoSize = true;
 			this->label24->Location = System::Drawing::Point(6, 16);
@@ -390,17 +403,18 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ chart15;
 			this->chart15->TabIndex = 1;
 			this->chart15->Text = L"chart15";
 			this->groupBox2->Controls->Add(this->richTextBox1);
-			this->groupBox2->Location = System::Drawing::Point(6, 130);
+			this->groupBox2->Location = System::Drawing::Point(6, 241);
 			this->groupBox2->Name = L"groupBox2";
-			this->groupBox2->Size = System::Drawing::Size(466, 440);
+			this->groupBox2->Size = System::Drawing::Size(466, 325);
 			this->groupBox2->TabIndex = 1;
 			this->groupBox2->TabStop = false;
 			this->groupBox2->Text = L"Промежуточный результат";
 			this->richTextBox1->Location = System::Drawing::Point(6, 19);
 			this->richTextBox1->Name = L"richTextBox1";
-			this->richTextBox1->Size = System::Drawing::Size(454, 415);
+			this->richTextBox1->Size = System::Drawing::Size(454, 300);
 			this->richTextBox1->TabIndex = 0;
 			this->richTextBox1->Text = L"";
+			this->groupBox1->Controls->Add(this->groupBox3);
 			this->groupBox1->Controls->Add(this->label6);
 			this->groupBox1->Controls->Add(this->label5);
 			this->groupBox1->Controls->Add(this->label4);
@@ -417,55 +431,55 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ chart15;
 			this->groupBox1->Controls->Add(this->label1);
 			this->groupBox1->Location = System::Drawing::Point(6, 6);
 			this->groupBox1->Name = L"groupBox1";
-			this->groupBox1->Size = System::Drawing::Size(466, 118);
+			this->groupBox1->Size = System::Drawing::Size(466, 229);
 			this->groupBox1->TabIndex = 0;
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"Начальные данные";
 			this->label6->AutoSize = true;
-			this->label6->Location = System::Drawing::Point(234, 92);
+			this->label6->Location = System::Drawing::Point(44, 190);
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(40, 13);
 			this->label6->TabIndex = 13;
 			this->label6->Text = L"Время";
 			this->label5->AutoSize = true;
-			this->label5->Location = System::Drawing::Point(234, 66);
+			this->label5->Location = System::Drawing::Point(44, 164);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(27, 13);
 			this->label5->TabIndex = 12;
 			this->label5->Text = L"Шаг";
 			this->label4->AutoSize = true;
-			this->label4->Location = System::Drawing::Point(234, 40);
+			this->label4->Location = System::Drawing::Point(44, 138);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(39, 13);
 			this->label4->TabIndex = 11;
 			this->label4->Text = L"Сигма";
 			this->label3->AutoSize = true;
-			this->label3->Location = System::Drawing::Point(234, 14);
+			this->label3->Location = System::Drawing::Point(44, 112);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(49, 13);
 			this->label3->TabIndex = 10;
 			this->label3->Text = L"Вариант";
-			this->textBox7->Location = System::Drawing::Point(289, 89);
+			this->textBox7->Location = System::Drawing::Point(99, 187);
 			this->textBox7->Name = L"textBox7";
 			this->textBox7->Size = System::Drawing::Size(53, 20);
 			this->textBox7->TabIndex = 9;
 			this->textBox7->Text = L"50";
-			this->textBox6->Location = System::Drawing::Point(289, 63);
+			this->textBox6->Location = System::Drawing::Point(99, 161);
 			this->textBox6->Name = L"textBox6";
 			this->textBox6->Size = System::Drawing::Size(53, 20);
 			this->textBox6->TabIndex = 8;
 			this->textBox6->Text = L"0,1";
-			this->textBox5->Location = System::Drawing::Point(289, 37);
+			this->textBox5->Location = System::Drawing::Point(99, 135);
 			this->textBox5->Name = L"textBox5";
 			this->textBox5->Size = System::Drawing::Size(53, 20);
 			this->textBox5->TabIndex = 7;
 			this->textBox5->Text = L"10";
-			this->textBox4->Location = System::Drawing::Point(289, 11);
+			this->textBox4->Location = System::Drawing::Point(99, 109);
 			this->textBox4->Name = L"textBox4";
 			this->textBox4->Size = System::Drawing::Size(53, 20);
 			this->textBox4->TabIndex = 6;
 			this->textBox4->Text = L"4";
-			this->button1->Location = System::Drawing::Point(360, 84);
+			this->button1->Location = System::Drawing::Point(360, 195);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(100, 28);
 			this->button1->TabIndex = 5;
@@ -505,6 +519,46 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ chart15;
 			this->tabControl1->SelectedIndex = 0;
 			this->tabControl1->Size = System::Drawing::Size(965, 602);
 			this->tabControl1->TabIndex = 0;
+			this->groupBox3->Controls->Add(this->label7);
+			this->groupBox3->Controls->Add(this->label8);
+			this->groupBox3->Controls->Add(this->textBox8);
+			this->groupBox3->Controls->Add(this->textBox9);
+			this->groupBox3->Controls->Add(this->checkBox5);
+			this->groupBox3->Location = System::Drawing::Point(207, 9);
+			this->groupBox3->Name = L"groupBox3";
+			this->groupBox3->Size = System::Drawing::Size(253, 180);
+			this->groupBox3->TabIndex = 14;
+			this->groupBox3->TabStop = false;
+			this->groupBox3->Text = L"Экспериментальный метод получения случайных процесса (дополнительная задача)";
+			this->checkBox5->AutoSize = true;
+			this->checkBox5->Location = System::Drawing::Point(14, 46);
+			this->checkBox5->Name = L"checkBox5";
+			this->checkBox5->Size = System::Drawing::Size(134, 17);
+			this->checkBox5->TabIndex = 0;
+			this->checkBox5->Text = L"Активировать задачу";
+			this->checkBox5->UseVisualStyleBackColor = true;
+			this->label7->AutoSize = true;
+			this->label7->Location = System::Drawing::Point(11, 130);
+			this->label7->Name = L"label7";
+			this->label7->Size = System::Drawing::Size(150, 13);
+			this->label7->TabIndex = 15;
+			this->label7->Text = L"Масштаб турбулентности (L)";
+			this->label8->AutoSize = true;
+			this->label8->Location = System::Drawing::Point(11, 84);
+			this->label8->Name = L"label8";
+			this->label8->Size = System::Drawing::Size(142, 13);
+			this->label8->TabIndex = 14;
+			this->label8->Text = L"Скорость движения ЛА (V)";
+			this->textBox8->Location = System::Drawing::Point(14, 146);
+			this->textBox8->Name = L"textBox8";
+			this->textBox8->Size = System::Drawing::Size(53, 20);
+			this->textBox8->TabIndex = 13;
+			this->textBox8->Text = L"700";
+			this->textBox9->Location = System::Drawing::Point(14, 100);
+			this->textBox9->Name = L"textBox9";
+			this->textBox9->Size = System::Drawing::Size(53, 20);
+			this->textBox9->TabIndex = 12;
+			this->textBox9->Text = L"300";
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(989, 626);
@@ -527,6 +581,8 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ chart15;
 			this->groupBox1->ResumeLayout(false);
 			this->groupBox1->PerformLayout();
 			this->tabControl1->ResumeLayout(false);
+			this->groupBox3->ResumeLayout(false);
+			this->groupBox3->PerformLayout();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -535,7 +591,10 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ chart15;
 
 	private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) 
 	{
-		InitFormationOfRandomProcessFromWhiteNoise(Convert::ToInt32(textBox1->Text), Convert::ToInt32(textBox2->Text), Convert::ToInt32(textBox3->Text), Convert::ToInt32(textBox4->Text), Convert::ToInt32(textBox7->Text), Convert::ToDouble(textBox5->Text), Convert::ToDouble(textBox6->Text));
+		if (checkBox5->Checked)
+			InitExperimentalMethodForObtainingRandomProcessesFromWhiteNoise(Convert::ToInt32(textBox1->Text), Convert::ToInt32(textBox2->Text), Convert::ToInt32(textBox3->Text), Convert::ToInt32(textBox4->Text), Convert::ToInt32(textBox7->Text), Convert::ToDouble(textBox5->Text), Convert::ToDouble(textBox6->Text), Convert::ToDouble(textBox9->Text), Convert::ToDouble(textBox8->Text));
+		else
+			InitFormationOfRandomProcessFromWhiteNoise(Convert::ToInt32(textBox1->Text), Convert::ToInt32(textBox2->Text), Convert::ToInt32(textBox3->Text), Convert::ToInt32(textBox4->Text), Convert::ToInt32(textBox7->Text), Convert::ToDouble(textBox5->Text), Convert::ToDouble(textBox6->Text));
 
 		richTextBox1->Clear();
 		richTextBox1->Text = System::IO::File::ReadAllText("Data.txt", System::Text::Encoding::GetEncoding(1251));
@@ -662,6 +721,140 @@ private: System::Windows::Forms::DataVisualization::Charting::Chart^ chart15;
 	   delete[]KY;
 
 	   out.close();
+	}
+
+	private: System::Void InitExperimentalMethodForObtainingRandomProcessesFromWhiteNoise(int N, int left, int right, int option, int time, float sigma, float H, float V, float l)
+	{
+		clock_t Time = clock();
+		ofstream out("Data.txt", ios::out);
+
+		int k = 0, kol = 0;
+		float* Ravn = new float[N];
+		for (int i = 0; i < N; i++)
+			Ravn[i] = 1.0 * rand() / (RAND_MAX + 1); // от 0 до 1
+
+		float* Pi = new float[20], * Coord = new float[20], max = Ravn[0], min = Ravn[0];
+
+		for (int i = 0; i < N; i++)
+		{
+			if (max < Ravn[i])
+				max = Ravn[i];
+			if (min > Ravn[i])
+				min = Ravn[i];
+		}
+
+		float h = (max - min) * 0.1;
+		out << "\t\tШаг распределения: " << h << endl << endl;
+
+		float l_border = 0;
+		float r_border = h;
+		do
+		{
+			k = 0;
+			for (int i = 0; i < N; i++)
+				if (Ravn[i] > l_border && Ravn[i] < r_border)
+					k++;
+			Pi[kol] = k / (float)N;
+			Coord[kol] = l_border;
+			kol++;
+			l_border = r_border;
+			r_border += h;
+		} while (r_border < max);
+
+		chart1->Series["Rav"]->Points->Clear();
+		for (int i = 0; i < kol; i++)
+			chart1->Series["Rav"]->Points->AddXY(Coord[i], Pi[i]);
+
+		Rav(out, N, Ravn);
+
+		chart4->Series["m(g)"]->Points->Clear();
+		chart4->Series["w(g)"]->Points->Clear();
+		chart4->Series["-w(g)"]->Points->Clear();
+		chart5->Series["D(g)"]->Points->Clear();
+		chart5->Series["e(g)"]->Points->Clear();
+		chart5->Series["-e(g)"]->Points->Clear();
+		chart15->Series["y"]->Points->Clear();
+		chart15->Series["x"]->Points->Clear();
+
+		cout << "\n\n";
+
+		float k1, k2, k3, k4, k11, k12, k13, k14, dy1 = 0, dy2 = 0, y = 0, sum = 0, summ = 0, SUMM = 0;
+		float u = 0, u1 = 0, mg = 0, Dg = 0, ky = 0, kx = 0, c1, c2, c3, c4;
+
+		float* Y = new float[N];
+		float* KY = new float[N];
+
+		float alpha = 0.5;
+		float betta = 0.6;
+
+		k = 0;
+		do
+		{
+			c1 = sigma * sqrt(3.0) * sqrt(V / l);
+			c2 = 2 * V / l;
+			c3 = pow(V, 2.0) / pow(l, 2.0);
+			c4 = -abs(2.0 * sqrt(3.0) - 1.0) * sigma * (V / l) * sqrt(V / l);
+
+			k1 = u1 + c1 * Ravn[k];
+			k11 = -c2 * u1 - c3 * u + c4 * Ravn[k] / sqrt(h);
+
+			k2 = (u1 + k11 * h * 0.5) + c1 * Ravn[k];
+			k12 = -c2 * (u1 + k11 * h * 0.5) - c3 * (u + k1 * h * 0.5) + c4 * Ravn[k] / sqrt(h);
+
+			k3 = (u1 + k12 * h * 0.5) + c1 * Ravn[k];
+			k13 = -c2 * (u1 + k12 * h * 0.5) - c3 * (u + k2 * h * 0.5) + c4 * Ravn[k] / sqrt(h);
+
+			k4 = (u1 + k13 * h * 0.5) + c1 * Ravn[k];
+			k14 = -c2 * (u1 + k13 * h * 0.5) - c3 * (u + k3 * h * 0.5) + c4 * Ravn[k] / sqrt(h);
+
+			dy1 = (h / 6.0) * (k1 + 2 * (k2 + k3) + k4);
+			dy2 = (h / 6.0) * (k11 + 2 * (k12 + k13) + k14);
+
+			u += dy1;
+			u1 += dy2;
+
+			sum += Ravn[k];
+			Y[k] = u1;
+
+			if (k > 1)
+			{
+				mg = sum * (1.0 / (k));
+				chart4->Series["m(g)"]->Points->AddXY(k, mg * 100);
+
+				summ += pow((Ravn[k] - mg), 2.0);
+				Dg = summ * (1.0 / (k - 1.0));
+				chart5->Series["D(g)"]->Points->AddXY(k, Dg * 1000);
+
+				ky = pow(sigma, 2.0) * exp(-abs(k * 0.1) * V / l) * (1.0 - abs(k * 0.1) * V / (2.0 * l));
+				KY[k] = ky;
+				chart15->Series["y"]->Points->AddXY(k, ky * 0.01);
+			}
+
+			k++;
+		} while (k < N);
+
+		out << "\n\n\n\t mx = " << mg * 100;
+		out << "\n\t Dx = " << Dg * 1000;
+
+		for (int i = 2; i < N - 1; i++)
+		{
+			sum += Y[i];
+			mg = sum * (1.0 / (i));
+			SUMM = pow((Y[i + 1] - mg), 2.0);
+			kx = KY[i] * SUMM;
+			chart15->Series["x"]->Points->AddXY(i, kx / 100000.0);
+		}
+
+		delete[]Ravn;
+		delete[]Pi;
+		delete[]Coord;
+		delete[]Y;
+		delete[]KY;
+
+		double EndTime = (clock() - (double)Time) / CLOCKS_PER_SEC;
+		out << "\n\n\t\tВремя выполнения: " << EndTime << endl;
+
+		out.close();
 	}
 };
 }
