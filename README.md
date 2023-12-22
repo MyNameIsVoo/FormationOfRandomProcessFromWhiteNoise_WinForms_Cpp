@@ -1,4 +1,9 @@
 # Статическое моделирование
+
+2 задачи, которые решаются в этой теме:
+* Формирование из белого шума случайного процесса с корреляционной функцией
+* Экспериментальный метод получения случайных процесса, описывающего вертикальную турбулентность атмосферы с заданными статистическими характеристиками путем пропускания белого шума через формирующий фильтр
+
 ## Формирование из белого шума случайного процесса с корреляционной функцией
 
 **Всем привет! ✌**
@@ -155,6 +160,55 @@
 
 ![image](https://github.com/MyNameIsVoo/FormationOfRandomProcessFromWhiteNoise_WinForms_Cpp/assets/95473945/0fe7364c-f48f-4577-b2be-bd207fb094a9)
 
+## Экспериментальный метод получения случайных процесса, описывающего вертикальную турбулентность атмосферы с заданными статистическими характеристиками путем пропускания белого шума через формирующий фильтр
+
+# Цель работы
+
+Изучение экспериментальных методов получения случайных процесса, описывающего вертикальную турбулентность атмосферы с заданными статистическими характеристиками путем пропускания белого шума через формирующий фильтр.
+
+# Описание работы
+
+Из экспериментальных данных следует, что вертикальные порывы ветра,  действующие на ЛА, движущийся со скоростью V, описываются случайной функцией, корреляционная функция  и спектральная плотность которой имеет вид:
+
+![image](https://github.com/MyNameIsVoo/FormationOfRandomProcessFromWhiteNoise_WinForms_Cpp/assets/95473945/1ab12ae9-8c17-400f-8cfa-04523579b5ce)
+
+где L- масштаб турбулентности, ![image](https://github.com/MyNameIsVoo/FormationOfRandomProcessFromWhiteNoise_WinForms_Cpp/assets/95473945/5c0da6a3-dd2d-48f3-b0d9-363a81b00457) - среднеквадратичное отклонение, характеризующее интенсивность турбулентности.
+
+Для получения из белого шума такого случайного процесса необходимо определить передаточную функцию формирующего фильтра. Для этого выражение (2) преобразуется к виду:
+
+![image](https://github.com/MyNameIsVoo/FormationOfRandomProcessFromWhiteNoise_WinForms_Cpp/assets/95473945/6434fc0c-ed38-4092-a0bd-e5b4884ac091)
+
+где ![image](https://github.com/MyNameIsVoo/FormationOfRandomProcessFromWhiteNoise_WinForms_Cpp/assets/95473945/73223c96-099b-4e20-918a-0e30b8336f1a)
+
+Отсюда находим передаточную функцию:
+
+![image](https://github.com/MyNameIsVoo/FormationOfRandomProcessFromWhiteNoise_WinForms_Cpp/assets/95473945/26f6f77d-83d4-4466-9f5e-f9f88e394942)
+
+Дифференциальное уравнение, описывающее динамику фильтра, может быть записано в виде: ![image](https://github.com/MyNameIsVoo/FormationOfRandomProcessFromWhiteNoise_WinForms_Cpp/assets/95473945/c5ee14ed-34c3-4d8f-a103-4637dfefef4d)
+
+где ![image](https://github.com/MyNameIsVoo/FormationOfRandomProcessFromWhiteNoise_WinForms_Cpp/assets/95473945/35e7e03b-4a23-4a40-ac82-93394edea271) или в виде:
+
+![image](https://github.com/MyNameIsVoo/FormationOfRandomProcessFromWhiteNoise_WinForms_Cpp/assets/95473945/faef0b9b-21e7-43e2-acb8-8a529e4f0298)
+
+Для моделирования на компьютере приведем уравнение второго порядка (25) к системе двух уравнений первого порядка:
+
+![image](https://github.com/MyNameIsVoo/FormationOfRandomProcessFromWhiteNoise_WinForms_Cpp/assets/95473945/7003e168-aa6a-4daf-a895-a96d109c7f1a)
+
+где
+
+![image](https://github.com/MyNameIsVoo/FormationOfRandomProcessFromWhiteNoise_WinForms_Cpp/assets/95473945/683972c8-6957-482c-80fd-d9abde1a551d)
+
+# Дано
+
+![image](https://github.com/MyNameIsVoo/FormationOfRandomProcessFromWhiteNoise_WinForms_Cpp/assets/95473945/f56abcc9-803d-4521-b120-fcbcbda22673)
+
+# Решение
+
+![image](https://github.com/MyNameIsVoo/FormationOfRandomProcessFromWhiteNoise_WinForms_Cpp/assets/95473945/6b29314e-3969-45b5-a798-666383befa82)
+![image](https://github.com/MyNameIsVoo/FormationOfRandomProcessFromWhiteNoise_WinForms_Cpp/assets/95473945/88c76aa6-3781-42ad-9117-14521ced4dc6)
+![image](https://github.com/MyNameIsVoo/FormationOfRandomProcessFromWhiteNoise_WinForms_Cpp/assets/95473945/8e8adafb-444f-4ed4-84db-39af7f027b42)
+![image](https://github.com/MyNameIsVoo/FormationOfRandomProcessFromWhiteNoise_WinForms_Cpp/assets/95473945/88d99b6f-f79b-4574-bf0c-4275164c4fe5)
+
 > [!WARNING]
 > **ВНИМАНИЕ!** На всех ЭВМ будет различный результат!
 
@@ -164,7 +218,6 @@
 ## Внешний вид программы
 
 ![image](https://github.com/MyNameIsVoo/FormationOfRandomProcessFromWhiteNoise_WinForms_Cpp/assets/95473945/b8138b46-005e-4d71-88ef-8c2c653d6bf4)
-
 
 # Ссылки
 
